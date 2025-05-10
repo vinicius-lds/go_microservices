@@ -1,0 +1,9 @@
+minikube start
+minikube dashboard
+
+# aplica todos os deployments definido na pasta k8s
+kubectl apply -f k8s
+
+# criar um load balancer
+kubectl expose deployment broker-service --type=LoadBalancer --port=8080 --target-port=8080
+minikube tunnel
