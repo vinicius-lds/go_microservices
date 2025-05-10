@@ -1,0 +1,11 @@
+project/db-data
+front-end/frontApp
+broker-service/brokerApp
+authentication-service/authApp
+logger-service/loggerServiceApp
+mail-service/mailApp
+mail-service/mailerApp
+listener-service/listenerApp
+**/go.sum
+**/.DS_Store
+**/*.pb.go

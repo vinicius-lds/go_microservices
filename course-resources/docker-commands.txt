@@ -1,0 +1,27 @@
+cd ../project
+docker build -f caddy.dockerfile -t viniciuslds/caddy:1.0.2 .
+docker push viniciuslds/caddy:1.0.2 
+
+cd ../front-end
+docker build -f front-end.dockerfile -t viniciuslds/front-end:1.0.2 .
+docker push viniciuslds/front-end:1.0.2
+
+cd ../logger-service
+docker build -f logger-service.dockerfile -t viniciuslds/logger-service:1.0.1 .
+docker push viniciuslds/logger-service:1.0.1 
+
+cd ../broker-service
+docker build -f broker-service.dockerfile -t viniciuslds/broker-service:1.0.1 .
+docker push viniciuslds/broker-service:1.0.1 
+
+cd ../authentication-service
+docker build -f authentication-service.dockerfile -t viniciuslds/authentication-service:1.0.0 .
+docker push viniciuslds/authentication-service:1.0.0 
+
+cd ../mail-service
+docker build -f mail-service.dockerfile -t viniciuslds/mail-service:1.0.0 .
+docker push viniciuslds/mail-service:1.0.0 
+
+cd ../listener-service
+docker build -f listener-service.dockerfile -t viniciuslds/listener-service:1.0.0 .
+docker push viniciuslds/listener-service:1.0.0 
